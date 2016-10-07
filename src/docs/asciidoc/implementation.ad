@@ -1,3 +1,10 @@
+`groovy.midi.GroovyMidi` is the entry point to the DSL.
+
+[source,groovy]
+---------------
+include::{projectdir}/src/main/groovy/groovy/midi/GroovyMidi.groovy[]
+---------------
+
 The DSL is implemented with just a couple simple builders.
 
 `groovy.midi.builder.ChannelBuilder`:
