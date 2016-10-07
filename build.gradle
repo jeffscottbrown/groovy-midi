@@ -29,3 +29,4 @@ asciidoctor.outputDir = new File(buildDir, 'docs')
 asciidoctor.separateOutputDirs = false
 
 task docs(dependsOn:[groovydoc, asciidoctor])
+task play(dependsOn:[run])

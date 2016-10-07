@@ -7,6 +7,6 @@ To build the documentation execute the `docs` Gradle task:
 
 The documentation will be generated at build/docs/index.html.
 
-To play the sample songs execute the `run` Gradle task`:
+To play the sample songs execute the `play` Gradle task`:
 
-    ./gradlew run
+    ./gradlew play
