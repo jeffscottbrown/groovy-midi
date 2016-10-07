@@ -1,7 +1,7 @@
 Groovy MIDI DSL Demo
 --------------------
 
-To build the documentation exeucte the `docs` Gradle task:
+To build the documentation execute the `docs` Gradle task:
 
     ./gradlew docs
 
