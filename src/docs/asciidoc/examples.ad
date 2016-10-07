@@ -12,7 +12,7 @@ include::{projectdir}/src/main/groovy/groovy/midi/demo/MidiDemo.groovy[tags=aqua
 
 [NOTE]
 ====
-Those examples may be run by executing the `play` gradle task.
+Those examples may be played by executing the `play` gradle task.
 
     ./gradlew play
 ====
