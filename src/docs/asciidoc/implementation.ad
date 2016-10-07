@@ -13,3 +13,13 @@ include::{projectdir}/src/main/groovy/groovy/midi/builder/ChannelBuilder.groovy[
 ---------------
 include::{projectdir}/src/main/groovy/groovy/midi/builder/NoteBuilder.groovy[]
 ---------------
+
+Note the use of the `@DelegatesTo` annotation.  Annotating a Closure method
+parameter with `@DelegatesTo` allows the compiler to know what methods are
+available within the Closure.  That is beneficial for several reasons.  1 is
+that it enables auto-completion of the DSL methods in an IDE.  Another is that
+it allows the static type checker to be aware of the methods which are valid to
+invoke inside of the Closure.  That means that code using the DSL may be marked
+with `@CompileStatic` or `@TypeChecked`.
+
+
