@@ -16,6 +16,7 @@ class ChannelBuilder {
         MidiChannel[] channels = synthesizer.channels
 
         def noteBuilder = new NoteBuilder(channel: channels[channelNumber])
+        c = (Closure)c.clone()
         c.delegate = noteBuilder
         c()
 
