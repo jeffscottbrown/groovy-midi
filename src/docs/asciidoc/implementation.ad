@@ -1,0 +1,15 @@
+The DSL is implemented with just a couple simple builders.
+
+`groovy.midi.builder.ChannelBuilder`:
+
+[source,groovy]
+---------------
+include::{projectdir}/src/main/groovy/groovy/midi/builder/ChannelBuilder.groovy[]
+---------------
+
+`groovy.midi.builder.NoteBuilder`:
+
+[source,groovy]
+---------------
+include::{projectdir}/src/main/groovy/groovy/midi/builder/NoteBuilder.groovy[]
+---------------

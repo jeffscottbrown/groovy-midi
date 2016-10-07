@@ -1,0 +1,49 @@
+The entry point to using the DSL is the static `play` method defined in the
+link:api/groovy/midi/GroovyMidi.html[groovy.midi.GroovyMidi] class.  The `play`
+method accepts a Closure as a parameter and the DSL may be used inside of that
+Closure.
+
+[source,groovy]
+---------------
+import groovy.midi.GroovyMidi
+
+GroovyMidi.play {
+    // ...
+}
+---------------
+
+The DSL supports selecting a MIDI channel and playing notes on that channel.
+
+The following will play middle-C on channel 0 for 1 second.
+
+[source,groovy]
+---------------
+GroovyMidi.play {
+    // select channel #0
+    channel(0) {
+        // 60 is the note value of middle-C
+        // 1000 is the number of milliseconds to play the note
+        play 60, 1000
+    }
+}
+---------------
+
+The link:api/groovy/midi/Notes.html[groovy.midi.Notes] interface defines a
+series of constants which represent 2 octaves of note values from A3 thru G4.
+The above could be rewritten as follows:
+
+[source,groovy]
+---------------
+GroovyMidi.play {
+    channel(0) {
+        // C4 is the note value of middle-C
+        // 1000 is the number of milliseconds to play the note
+        play C4, 1000
+    }
+}
+---------------
+
+All of the methods that are available in the Closure that is being passed to
+the `channel(int, Closure)` method are defined in the
+link:api/groovy/midi/builder/NoteBuilder.html[groovy.midi.builder.NoteBuilder]
+class.

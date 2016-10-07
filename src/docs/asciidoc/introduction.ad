@@ -1,0 +1,4 @@
+This library represents a simple example of one way to build an internal DSL
+using Groovy.  The functionality of the library is limited and not intended
+to be a full featured MIDI DSL.  Instead the library aims to serve as an
+example of 1 way to organize a DSL implementation.

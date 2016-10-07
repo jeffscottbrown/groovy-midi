@@ -1,0 +1,31 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'
+    }
+}
+
+apply plugin: 'application'
+apply plugin: 'groovy'
+apply plugin: 'org.asciidoctor.convert'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.7'
+}
+
+mainClassName = 'groovy.midi.demo.MidiDemo'
+
+groovydoc.docTitle = "Groovy MIDI DSL"
+groovydoc.destinationDir = new File(buildDir, 'docs/api')
+
+asciidoctor.outputDir = new File(buildDir, 'docs')
+asciidoctor.separateOutputDirs = false
+
+task docs(dependsOn:[groovydoc, asciidoctor])

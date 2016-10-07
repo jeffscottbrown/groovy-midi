@@ -1,0 +1,17 @@
+= Groovy MIDI DSL Demo
+
+== Introduction
+
+include::introduction.ad[]
+
+== Usage
+
+include::usage.ad[]
+
+== Examples
+
+include::examples.ad[]
+
+== Implementation Notes
+
+include::implementation.ad[]
