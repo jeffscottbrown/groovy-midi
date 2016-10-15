@@ -49,6 +49,12 @@ class NoteBuilder implements Notes {
      * milliseconds.  All of the ints prior
      * to the last int represent the notes to play from 0 to 127 (60 = Middle C).
      *
+     * <pre>
+     *     {@code
+     *      playChord A4, D4, 450
+     *     }
+     * </pre>
+     *
      * @param numbers notes to play and the duration to play them
      * @see #play(int int)
      * @see #press(int)
