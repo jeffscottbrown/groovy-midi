@@ -10,6 +10,13 @@ include::{projectdir}/src/main/groovy/groovy/midi/demo/MidiDemo.groovy[tags=fur_
 include::{projectdir}/src/main/groovy/groovy/midi/demo/MidiDemo.groovy[tags=aqualung,indent=0]
 ---------------
 
+
+=== Smoke On The Water
+[source,groovy]
+---------------
+include::{projectdir}/src/main/groovy/groovy/midi/demo/MidiDemo.groovy[tags=smoke,indent=0]
+---------------
+
 [NOTE]
 ====
 Those examples may be played by executing the `play` gradle task.
