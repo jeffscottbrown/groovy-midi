@@ -20,9 +20,7 @@ class NoteBuilder implements Notes {
      * @see #release(int)
      */
     void play(int note, int duration) {
-        press(note)
-        pause(duration)
-        release(note)
+        playChord note, duration
     }
 
     /**
@@ -45,6 +43,29 @@ class NoteBuilder implements Notes {
         channel.noteOn(note, 200)
     }
 
+    /**
+     * Plays the specified notes for the specified duration.  The last int
+     * in the numbers argument represents the duration to play the notes in
+     * milliseconds.  All of the ints prior
+     * to the last int represent the notes to play from 0 to 127 (60 = Middle C).
+     *
+     * @param numbers notes to play and the duration to play them
+     * @see #play(int int)
+     * @see #press(int)
+     * @see #pause(long)
+     * @see #release(int)
+     */
+    void playChord(int[] numbers) {
+        def notes = numbers[0..-2]
+        def duration = numbers[-1]
+        for(int n : notes) {
+            press n
+        }
+        pause duration
+        for(int n : notes) {
+            release n
+        }
+    }
     /**
      * Releases a note that has been played with <code>press(int)</code>
      * <pre>

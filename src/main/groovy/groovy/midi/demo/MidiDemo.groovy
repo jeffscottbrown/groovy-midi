@@ -45,83 +45,27 @@ class MidiDemo {
             channel(0) {
                 pause 500
 
-                press A4
-                press D4
-                pause 450
-                release A4
-                release D4
-
-                press C4
-                press F4
-                pause 450
-                release C4
-                release F4
-
-                press D4
-                press G4
-                pause 600
-                release D4
-                release G4
+                playChord A4, D4, 450
+                playChord C4, F4, 450
+                playChord D4, G4, 600
 
                 pause 150
 
-                press A4
-                press D4
-                pause 450
-                release A4
-                release D4
-
-                press C4
-                press F4
-                pause 450
-                release C4
-                release F4
-
-                press DS4
-                press GS4
-                pause 225
-                release DS4
-                release GS4
-
-                press D4
-                press G4
-                pause 450
-                release D4
-                release G4
+                playChord A4, D4, 450
+                playChord C4, F4, 450
+                playChord DS4, GS4, 225
+                playChord D4, G4, 450
 
                 pause 300
 
-                press A4
-                press D4
-                pause 450
-                release A4
-                release D4
-
-                press C4
-                press F4
-                pause 450
-                release C4
-                release F4
-
-                press D4
-                press G4
-                pause 600
-                release D4
-                release G4
+                playChord A4, D4, 450
+                playChord C4, F4, 450
+                playChord D4, G4, 600
 
                 pause 75
 
-                press C4
-                press F4
-                pause 450
-                release C4
-                release F4
-
-                press A4
-                press D4
-                pause 600
-                release A4
-                release D4
+                playChord C4, F4, 450
+                playChord A4, D4, 600
 
                 pause 1000
             }
